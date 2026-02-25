@@ -1,29 +1,44 @@
-# LeetCode_Solution
+# LeetCode Solution
 
-Welcome to **LeetCode_Solution**, a personal repository containing my solutions to various LeetCode problems. This repository is aimed at improving problem-solving skills, practicing data structures & algorithms, and preparing for coding interviews.
+Welcome to **LeetCode Solution**.  
+This repository contains my C++ solutions to LeetCode problems for DSA practice and interview preparation.
 
-## 🧩 Purpose
-- Keep track of my LeetCode problem-solving journey.
-- Practice and improve **C++ programming** skills.
-- Share efficient and clean solutions for reference.
+## Purpose
+- Track my LeetCode problem-solving journey.
+- Improve C++ and algorithmic thinking.
+- Keep clean and efficient solutions for future reference.
 
-## 📂 Structure
+## Repository Structure
+```text
 LeetCode_Solution/
-|
 ├── devlibs/
-│ └── cpphelper.h
+│   └── cpphelper.h
 ├── Easy/
-│ └── Problem_Name.cpp
+│   └── <problem_file>.cpp
 ├── Medium/
-│ └── Problem_Name.cpp
+│   └── <problem_file>.cpp
 ├── Hard/
-│ └── Problem_Name.cpp
+│   └── <problem_file>.cpp
+├── .gitignore
 └── README.md
+```
 
-- Problems are organized by difficulty: **Easy**, **Medium**, **Hard**.
-<!-- - Each file contains the problem solution along with brief comments explaining the approach. -->
+- Problems are organized by difficulty: `Easy`, `Medium`, `Hard`.
+- File naming format usually follows: `<problem_number>_<problem_name>.cpp`.
 
-## 💻 Usage
+## Usage
 1. Clone the repository:
 ```bash
 git clone https://github.com/rifatsoftdev/LeetCode_Solution.git
+cd LeetCode_Solution
+```
+
+2. Open any solution file and compile with a C++ compiler:
+```bash
+g++ Medium/16_3Sum_Closest.cpp -o run
+./run
+```
+
+## Notes
+- Helper utilities (if needed) are placed in `devlibs/`.
+- Solutions may vary in style as I keep improving over time.
