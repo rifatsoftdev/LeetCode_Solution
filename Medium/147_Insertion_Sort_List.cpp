@@ -18,12 +18,18 @@ using namespace std;
  */
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Optimal Solution (Insertion Sort):
-1. We can use the insertion sort algorithm to sort the linked list in-place.
-2. We create a dummy node that will serve as the new head of the sorted list.
-3. We iterate through the original list and for each node, we find the correct position in the sorted list and insert it there.
-4. We maintain a pointer to the current node in the original list and a pointer to the last node in the sorted list to optimize the insertion process.
+    1. We can use the insertion sort algorithm to sort the linked list in-place.
+    2. We create a dummy node that will serve as the new head of the sorted list.
+    3. We iterate through the original list and for each node, we find the correct position in the sorted list and insert it there.
+    4. We maintain a pointer to the current node in the original list and a pointer to the last node in the sorted list to optimize the insertion process.
 
 Space Complexity: O(1)
 Time Complexity: O(n^2)

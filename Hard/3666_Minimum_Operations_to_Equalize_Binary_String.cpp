@@ -7,8 +7,22 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
 
+
+/* ================================================================================
+Solution 1:
+
+Minimum Operations to Equalize Binary String (Greedy / Mathematical):
+    1. The goal is to make all characters in a binary string equal to '1' using operations of length `k`.
+    2. We count the number of zeros in the string. If there are no zeros, 0 operations are needed.
+    3. We consider the constraints imposed by the operation length `k` and the remaining length `base = len - k`.
+    4. We calculate the minimum number of operations required for both odd and even scenarios based on the parity of the zeros and the operation length.
+    5. The result is the minimum valid number of operations, or -1 if it's impossible to equalize the string.
+
+Time Complexity: O(n) where n is the length of the string.
+Space Complexity: O(1).
 */
 
 class Solution {

@@ -6,11 +6,17 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Brute Force Approach:
-1. Generate all possible binary codes of size k (there are 2^k such codes).
-2. For each generated code, check if it is a substring of s.
-3. If any code is not found in s, return false. If all codes are found, return true.
+    1. Generate all possible binary codes of size k (there are 2^k such codes).
+    2. For each generated code, check if it is a substring of s.
+    3. If any code is not found in s, return false. If all codes are found, return true.
 
 Time Complexity: O(2^k * n) where n is the length of the string s (due to the substring search).
 Space Complexity: O(2^k) for storing the generated binary codes.

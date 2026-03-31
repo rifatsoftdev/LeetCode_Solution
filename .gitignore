@@ -39,3 +39,8 @@
 
 # debug information files
 *.dwo
+
+# Ignore a specific file
+operation.py
+clean
+# details.md

@@ -17,10 +17,16 @@ struct TreeNode {
 };
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Brute Force Approach (DFS):
-1. Perform a depth-first search (DFS) to find all root-to-leaf paths.
-2. Convert each path from binary to decimal and sum them up.
+    1. Perform a depth-first search (DFS) to find all root-to-leaf paths.
+    2. Convert each path from binary to decimal and sum them up.
 
 Time Complexity: O(n) (where n is the number of nodes in the tree)
 Space Complexity: O(h) (where h is the height of the tree, due to the

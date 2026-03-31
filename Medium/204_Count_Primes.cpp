@@ -6,12 +6,18 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Optimal Solution (Sieve of Eratosthenes):
-1. We can use the Sieve of Eratosthenes algorithm to find all prime numbers less than n efficiently.
-2. We create a boolean vector initialized to true, where the index represents the number and the value represents whether it is prime or not.
-3. We mark 0 and 1 as non-prime. Then, we iterate through the vector starting from 2. For each prime number found, we mark all of its multiples as non-prime.
-4. Finally, we count the number of true values in the vector, which represents the count of prime numbers less than n.
+    1. We can use the Sieve of Eratosthenes algorithm to find all prime numbers less than n efficiently.
+    2. We create a boolean vector initialized to true, where the index represents the number and the value represents whether it is prime or not.
+    3. We mark 0 and 1 as non-prime. Then, we iterate through the vector starting from 2. For each prime number found, we mark all of its multiples as non-prime.
+    4. Finally, we count the number of true values in the vector, which represents the count of prime numbers less than n.
 
 Space Complexity: O(n)
 Time Complexity: O(n log log n)

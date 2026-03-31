@@ -6,6 +6,23 @@
 using namespace std;
 
 
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
+Optimal Solution (Binary Search):
+    1. Use binary search to find the first and last occurrences of the target element.
+    2. To find the first occurrence ('L'), when the target is found, continue searching in the left half.
+    3. To find the last occurrence ('R'), when the target is found, continue searching in the right half.
+    4. If the target is not found, return -1 for both positions.
+
+Time Complexity: O(log n)
+Space Complexity: O(1)
+*/
+
 class Solution {
 public:
     int binarySearch(vector<int>& arr, int num, char c) {

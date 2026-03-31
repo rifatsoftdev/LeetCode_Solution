@@ -7,10 +7,16 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Brute Force Approach (Looping):
-1. For each element in the array, check if there exists a smaller element to its left and a smaller element to its right.
-2. If such elements exist, calculate the sum of the triplet and keep track of the minimum sum found.
+    1. For each element in the array, check if there exists a smaller element to its left and a smaller element to its right.
+    2. If such elements exist, calculate the sum of the triplet and keep track of the minimum sum found.
 
 Time Complexity: O(n^2) (due to the nested loops)
 Space Complexity: O(1)

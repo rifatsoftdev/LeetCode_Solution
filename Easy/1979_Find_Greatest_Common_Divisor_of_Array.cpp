@@ -6,10 +6,16 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Brute Force Approach (Sorting and GCD Calculation):
-1. Sort the array to find the minimum and maximum elements.
-2. Calculate the greatest common divisor (GCD) of the minimum and maximum elements using the Euclidean algorithm.
+    1. Sort the array to find the minimum and maximum elements.
+    2. Calculate the greatest common divisor (GCD) of the minimum and maximum elements using the Euclidean algorithm.
 
 Time Complexity: O(n log n) (due to sorting)
 Space Complexity: O(1) (ignoring the space used for sorting)

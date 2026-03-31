@@ -6,13 +6,20 @@
 using namespace std;
 
 
-/*
-Brute Force Approach (Linear Search):
-1. Iterate through the array and count the occurrences of each element.
-2. Return the element that occurs only once.
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
+Single Element in a Sorted Array (Linear Search):
+    1. Iterate through the array and check each element with its neighbors.
+    2. If an element is not equal to its predecessor and not equal to its successor, it is the single element.
+    3. Special care is taken for the first and last elements of the array.
 
 Time Complexity: O(n)
-Space Complexity: O(n)
+Space Complexity: O(1)
 */
 
 // class Solution {
@@ -28,11 +35,13 @@ Space Complexity: O(n)
 // };
 
 
-/*
+/* ================================================================================
+Solution 2:
+
 Optimal Approach (Binary Search):
-1. Use binary search to find the single element in the sorted array.
-2. Check the middle element and its neighbors to determine which half of the array contains the single element.
-3. Continue the search in the appropriate half until the single element is found.
+    1. Use binary search to find the single element in the sorted array.
+    2. Check the middle element and its neighbors to determine which half of the array contains the single element.
+    3. Continue the search in the appropriate half until the single element is found.
 
 Time Complexity: O(log n)
 Space Complexity: O(1)

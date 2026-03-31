@@ -8,10 +8,17 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Brute Force Approach:
-1. Convert the number to binary string.
-2. Iterate through the binary string and count the maximum distance between two consecutive '1's.
+    1. Convert the number to binary string.
+    2. Iterate through the binary string and count the maximum distance between two consecutive '1's.
+
 Time Complexity: O(log n) (due to the conversion to binary)
 Space Complexity: O(log n) (due to the binary string)
 */

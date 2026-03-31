@@ -6,10 +6,16 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Brute Force Solution (2 Nested Loops):
-1. Use two nested loops to iterate through the array. The outer loop fixes one element and the inner loop calculates the product of all other elements except the fixed one.
-2. Store the product in a result array and return it.
+    1. Use two nested loops to iterate through the array. The outer loop fixes one element and the inner loop calculates the product of all other elements except the fixed one.
+    2. Store the product in a result array and return it.
 
 Space Complexity: O(n)
 Time Complexity: O(n^2)
@@ -34,11 +40,15 @@ Time Complexity: O(n^2)
 // };
 
 
-/*
+
+
+/* ================================================================================
+Solution 2:
+
 Optimal Solution (Prefix and Suffix Products):
-1. We can calculate the product of all elements to the left of each index and store it in a leftProduct array.
-2. We can calculate the product of all elements to the right of each index and store it in a rightProduct array.
-3. Finally, we can multiply the corresponding values from leftProduct and rightProduct to get the final answer for each index.
+    1. We can calculate the product of all elements to the left of each index and store it in a leftProduct array.
+    2. We can calculate the product of all elements to the right of each index and store it in a rightProduct array.
+    3. Finally, we can multiply the corresponding values from leftProduct and rightProduct to get the final answer for each index.
 
 Space Complexity: O(n)
 Time Complexity: O(n)

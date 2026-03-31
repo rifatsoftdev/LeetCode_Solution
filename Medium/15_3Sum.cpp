@@ -6,11 +6,17 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Brute Force Solution (3 Nested Loops):
-1. Use three nested loops to iterate through all possible triplets in the array.
-2. For each triplet, check if the sum is zero. If it is, add the triplet to a set to ensure uniqueness.
-3. Convert the set of triplets to a vector and return it.
+    1. Use three nested loops to iterate through all possible triplets in the array.
+    2. For each triplet, check if the sum is zero. If it is, add the triplet to a set to ensure uniqueness.
+    3. Convert the set of triplets to a vector and return it.
 
 Time Complexity: O(n^3)
 Space Complexity: O(n) for set to store unique triplets
@@ -44,11 +50,13 @@ Space Complexity: O(n) for set to store unique triplets
 // };
 
 
-/*
+/* /* ================================================================================
+Solution 2:
+
 Better Solution (Hashing):
-1. Iterate through the array and for each element, use a hash set to find pairs that sum to the negative of the current element.
-2. For each pair found, create a triplet and sort it to avoid duplicates.
-3. Use a set to store unique triplets and return the result as a vector of vectors.
+    1. Iterate through the array and for each element, use a hash set to find pairs that sum to the negative of the current element.
+    2. For each pair found, create a triplet and sort it to avoid duplicates.
+    3. Use a set to store unique triplets and return the result as a vector of vectors.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n) for set to store unique triplets
@@ -84,12 +92,14 @@ Space Complexity: O(n) for set to store unique triplets
 // };
 
 
-/*
+/* ================================================================================
+Solution 3:
+
 Optimal Solution (2 Pointer Approach):
-1. Sort the input array to facilitate the two-pointer technique and to easily skip duplicates.
-2. Iterate through the sorted array, fixing one element and using two pointers to find pairs that sum to the negative of the fixed element.
-3. Move the left pointer to the right if the sum is less than zero, and move the right pointer to the left if the sum is greater than zero.
-4. If a triplet is found, add it to the result and move both pointers while skipping duplicates to avoid repeating the same triplet.
+    1. Sort the input array to facilitate the two-pointer technique and to easily skip duplicates.
+    2. Iterate through the sorted array, fixing one element and using two pointers to find pairs that sum to the negative of the fixed element.
+    3. Move the left pointer to the right if the sum is less than zero, and move the right pointer to the left if the sum is greater than zero.
+    4. If a triplet is found, add it to the result and move both pointers while skipping duplicates to avoid repeating the same triplet.
 
 Time Complexity: O(n^2)
 Space Complexity: O(log n) auxiliary

@@ -7,10 +7,16 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Brute Force Approach (Counting and Sorting):
-1. Count the number of '1' bits for each integer in the array.
-2. Sort the integers based on the count of '1' bits and then by their values.
+    1. Count the number of '1' bits for each integer in the array.
+    2. Sort the integers based on the count of '1' bits and then by their values.
 
 Time Complexity: O(n log n) (due to sorting)
 Space Complexity: O(n) (due to the map storing the integers based on their '1' bit counts)

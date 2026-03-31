@@ -8,10 +8,10 @@ using namespace std;
 
 /*
 Searching Algorithm: Linear Search
-1. Iterate through the array from the beginning.
-2. For each element, compare it with the target value.
-3. If the current element is greater than or equal to the target, return its index as the insertion position.
-4. If the loop completes without finding an element greater than or equal to the target, return the size of the array as the insertion position (i.e., the target should be inserted at the end of the array).
+    1. Iterate through the array from the beginning.
+    2. For each element, compare it with the target value.
+    3. If the current element is greater than or equal to the target, return its index as the insertion position.
+    4. If the loop completes without finding an element greater than or equal to the target, return the size of the array as the insertion position (i.e., the target should be inserted at the end of the array).
 
 Time Complexity: O(n)
 Space Complexity: O(1)

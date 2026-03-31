@@ -15,11 +15,17 @@ using namespace std;
  * };
 */
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Linked List Cycle:
-1. Use two pointers, slow and fast. Slow moves one step at a time, while fast moves two steps at a time.
-2. If there is a cycle, the fast pointer will eventually meet the slow pointer.
-3. If there is no cycle, the fast pointer will reach the end of the list (nullptr) without meeting the slow pointer.
+    1. Use two pointers, slow and fast. Slow moves one step at a time, while fast moves two steps at a time.
+    2. If there is a cycle, the fast pointer will eventually meet the slow pointer.
+    3. If there is no cycle, the fast pointer will reach the end of the list (nullptr) without meeting the slow pointer.
 
 Time Complexity: O(n) - In the worst case, we may need to traverse the entire list once.
 Space Complexity: O(1) - We are using only a constant amount of extra space for the two pointers.

@@ -9,8 +9,8 @@ using namespace std;
 
 /*
 Brute Force Approach (Backtracking):
-1. Generate all permutations of the numbers from 1 to n.
-2. Sort the permutations and return the k-th permutation.
+    1. Generate all permutations of the numbers from 1 to n.
+    2. Sort the permutations and return the k-th permutation.
 
 Time Complexity: O(n! * n) due to generating all permutations and sorting them.
 Space Complexity: O(n! * n) for storing all permutations.
@@ -48,10 +48,10 @@ Space Complexity: O(n! * n) for storing all permutations.
 
 /*
 Optimal Approach (Factorial Number System):
-1. We can use the factorial number system to find the k-th permutation directly without generating all permutations.
-2. We first calculate the factorial values for numbers from 0 to n-1.
-3. We then determine the index of the next number to add to our permutation by dividing k by the factorial of the remaining digits.
-4. We update k to find the next index for the remaining digits and repeat the process until we have our complete permutation.
+    1. We can use the factorial number system to find the k-th permutation directly without generating all permutations.
+    2. We first calculate the factorial values for numbers from 0 to n-1.
+    3. We then determine the index of the next number to add to our permutation by dividing k by the factorial of the remaining digits.
+    4. We update k to find the next index for the remaining digits and repeat the process until we have our complete permutation.
 
 Time Complexity: O(n^2) due to the erase operation on the vector.
 Space Complexity: O(n) for storing the numbers and factorial values.

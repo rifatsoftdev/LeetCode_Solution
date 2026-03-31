@@ -6,13 +6,19 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Optimal Solution (Fast Exponentiation):
-1. We can use the fast exponentiation method (also known as exponentiation by squaring) to compute x^n efficiently.
-2. If n is even, we can compute x^n as (x^(n/2))^2.
-3. If n is odd, we can compute x^n as (x^(n//2))^2 * x.
-4. If n is negative, we can compute x^n as 1 / (x^(-n)).
-5. We can implement this using recursion or iteration.
+    1. We can use the fast exponentiation method (also known as exponentiation by squaring) to compute x^n efficiently.
+    2. If n is even, we can compute x^n as (x^(n/2))^2.
+    3. If n is odd, we can compute x^n as (x^(n//2))^2 * x.
+    4. If n is negative, we can compute x^n as 1 / (x^(-n)).
+    5. We can implement this using recursion or iteration.
 
 Space Complexity: O(1)
 Time Complexity: O(n^3)

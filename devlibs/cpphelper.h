@@ -8,7 +8,20 @@
 #include <algorithm>
 #include <map>
 #include <unordered_map>
+#include <unordered_set>
 #include <bitset>
+#include <stack>
+#include <queue>
+#include <string>
+#include <cmath>
+#include <array>
+#include <climits>
+#include <deque>
+
+#include "linkedlist.h"
+#include "binarytree.h"
+
+
 
 using namespace std;
 
@@ -39,7 +52,7 @@ typedef pair<int, int> pii;
 #define WHITE   "\033[37m"
 
 
-// Generic Vector Print Function
+// Generic Int Vector Print Function
 template<typename T>
 void printVec(const vector<T>& vct) {
     cout << "{";
@@ -190,23 +203,15 @@ string decimalToBinary(int n) {
 }
 
 
-// 
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
-
-void printLinkList(ListNode* head) {
+// print singly-linked list
+void printSinglyLinkList(ListNode* head) {
     ListNode* current = head;
     while (current != nullptr) {
-        std::cout << current->val;
-        if (current->next != nullptr) std::cout << " -> ";
+        cout << current->val;
+        if (current->next != nullptr) cout << " -> ";
         current = current->next;
     }
-    std::cout << std::endl;
+    cout << endl;
 }
 
 

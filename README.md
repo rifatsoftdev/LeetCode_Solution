@@ -46,10 +46,10 @@ g++ Medium/16_3Sum_Closest.cpp -o run
 ## 📬 Contact
 Feel free to reach out if you have any questions or suggestions:
 - Email: rifatsoft.dev@gmail.com
-- GitHub: [rifatsoftdev](https:// github.com/rifatsoftdev)
+- GitHub: [rifatsoftdev](https://github.com/rifatsoftdev)
 - Website: [rifatsoft.dev](https://rifatsoftdev.netlify.app/)
 - LinkedIn: [Md Rifat Rahman](https://www.linkedin.com/in/rifatsoftdev/)
 - Instagram: [@rifatsoftdev](https://www.instagram.com/rifatsoftdev/)
 
 
-Happy coding! 🚀
+Happy coding! 🚀👨‍💻

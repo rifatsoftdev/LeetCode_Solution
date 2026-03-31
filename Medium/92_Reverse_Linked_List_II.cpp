@@ -17,18 +17,24 @@ using namespace std;
  * };
 */
 
-/*
-Reverse Linked List II:
-1. Create a dummy node and point its next to the head of the list. This helps in handling edge cases where the head might be reversed.
-2. Use a pointer (prev) to traverse the list until it reaches the node just before the left position (left - 1).
-3. Use another pointer (curr) to point to the left position (the start of the sublist to be reversed).
-4. Reverse the sublist from left to right using a loop:
-   a. In each iteration, store the next node (temp) of curr.
-   b. Update the next pointer of curr to skip temp (curr->next = temp->next).
-   c. Insert temp at the beginning of the reversed sublist (temp->next = prev->next; prev->next = temp).
-5. After the loop, the sublist will be reversed, and the dummy node's next will point to the new head of the list. Return dummy.next.
-Time Complexity: O(n), where n is the number of nodes in the linked list, since we need to traverse the list at most twice (once to reach left and once to reverse the sublist).
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
 
+
+/* ================================================================================
+Solution 1:
+
+Reverse Linked List II:
+    1. Create a dummy node and point its next to the head of the list. This helps in handling edge cases where the head might be reversed.
+    2. Use a pointer (prev) to traverse the list until it reaches the node just before the left position (left - 1).
+    3. Use another pointer (curr) to point to the left position (the start of the sublist to be reversed).
+    4. Reverse the sublist from left to right using a loop:
+    a. In each iteration, store the next node (temp) of curr.
+    b. Update the next pointer of curr to skip temp (curr->next = temp->next).
+    c. Insert temp at the beginning of the reversed sublist (temp->next = prev->next; prev->next = temp).
+    5. After the loop, the sublist will be reversed, and the dummy node's next will point to the new head of the list. Return dummy.next.
+
+Time Complexity: O(n), where n is the number of nodes in the linked list, since we need to traverse the list at most twice (once to reach left and once to reverse the sublist).
 Space Complexity: O(1), since we are using only a constant amount of extra space for the pointers.
 */
 

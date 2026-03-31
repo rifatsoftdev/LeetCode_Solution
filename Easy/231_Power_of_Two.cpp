@@ -6,10 +6,16 @@
 using namespace std;
 
 
-/*
+// NOTE:
+// For LeetCode submission, copy only the `class Solution` part.
+
+
+/* ================================================================================
+Solution 1:
+
 Brute Force Approach (Linear Search):
-1. Iterate through the array and count the occurrences of each element.
-2. Return the element that occurs only once.
+    1. Iterate through the array and count the occurrences of each element.
+    2. Return the element that occurs only once.
 
 Time Complexity: O(n)
 Space Complexity: O(n)
