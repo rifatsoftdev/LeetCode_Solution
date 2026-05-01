@@ -1,0 +1,2 @@
+# 1689_Partitioning_Into_Minimum_Number
+

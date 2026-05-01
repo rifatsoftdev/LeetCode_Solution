@@ -19,10 +19,14 @@
 19      Remove Nth Node From End of List                            M   ✔️
 20      Valid Parentheses                                           E   ✔️
 21      Merge Two Sorted Lists                                      E   ✔️
+22      Generate Parentheses                                        M   ✔️
+23      Merge k Sorted Lists                                        H   ✔️  👨‍💻
+24      Swap Nodes in Pairs                                         M   ✔️
 31      Next Permutation                                            M   ✔️
 33      Search in Rotated Sorted Array                              M   ✔️
 34      Find First and Last Position of Element in Sorted Array     M   ✔️
 35      Search Insert Position                                      E   ✔️
+36      Valid Sudoku                                                M   ✔️
 37      Sudoku Solver                                               H   
 38      Count and Say                                               E   ✔️
 39      Combination Sum                                             M   ✔️  👨‍💻
@@ -31,6 +35,8 @@
 47      Permutations II                                             M   ✔️
 48      Rotate Image                                                M   ✔️
 50      Pow(x, n)                                                   M   ✔️
+51      N-Queens                                                    H   ✔️
+52      N-Queens II                                                 H   ✔️
 53      Maximum Subarray                                            M   ✔️
 54      Spiral Matrix                                               M   ✔️
 55      Jump Game                                                   M   ✔️
@@ -40,14 +46,16 @@
 61      Rotate List                                                 M   ✔️
 66      Plus One                                                    E   ✔️
 67      Add Binary                                                  E   ✔️
-69      Sqrt(x)                                                     E   ✔️
+69      Sqrt(x)                                                     E   ✔️  👨‍💻
 70      Climbing Stairs                                             E   ✔️
 71      Simplify Path                                               M   
 75      Sort Colors                                                 M   ✔️
 78      Subsets                                                     M   ✔️
 79      Word Search                                                 M   
 80      Remove Duplicates from Sorted Array II                      M   ✔️
+84      Largest Rectangle in Histogram                              H   ✔️
 88      Merge Sorted Array                                          E   ✔️
+89      Gray Code                                                   M   ✔️
 90      Subsets II                                                  M   ✔️
 92      Reverse Linked List II                                      M   ✔️
 94      Binary Tree Inorder Traversal                               E   ✔️
@@ -66,12 +74,14 @@
 144     Binary Tree Preorder Traversal                              E   ✔️
 145     Binary Tree Postorder Traversal                             E   ✔️
 147     Insertion Sort List                                         M   ✔️
+155     Min Stack                                                   M   ✔️
 169     Majority Element                                            E   ✔️
 190     Reverse Bits                                                E   ✔️
 198     House Robber                                                M   ✔️
 203     Remove Linked List Elements                                 E   ✔️
 204     Count Primes                                                M   ✔️
 206     Reverse Linked List                                         E   ✔️
+219     Contains Duplicate II                                       E   ✔️
 226     Invert Binary Tree                                          E   ✔️
 229     Majority Element II                                         M   ✔️
 230     Kth Smallest Element in a BST                               M   ✔️
@@ -90,28 +100,35 @@
 371     Sum of Two Integers                                         M   ✔️
 383     Ransom Note                                                 E   ✔️
 394     Decode String                                               M   
+396     Rotate Function                                             M   
 405     Convert a Number to Hexadecimal                             E   ✔️
 409     Longest Palindrome                                          E   ✔️
 415     Add Strings                                                 E   ✔️
 434     Number of Segments in a String                              E   ✔️
 443     String Compression                                          M   ✔️
+461     Hamming Distance                                            E   ✔️
 476     Number Complement                                           E   ✔️
 485     Max Consecutive Ones                                        E   
 493     Reverse Pairs                                               H   
 496     Next Greater Element I                                      E   ✔️
 500     Keyboard Row                                                E   ✔️  👨‍💻
-503     Next Greater Element II                                     M   ✔️
+503     Next Greater Element II                                     M   ✔️  
 509     Fibonacci Number                                            E   ✔️  👨‍💻
 520     Detect Capital                                              E   ✔️  👨‍💻
 540     Single Element in a Sorted Array                            M   ✔️
 541     Reverse String II                                           E   ✔️
 643     Maximum Average Subarray I                                  M   
+645     Set Mismatch                                                E   ✔️  
+657     Robot Return to Origin                                      E   ✔️  👨‍💻
 560     Subarray Sum Equals K                                       M   ✔️  👨‍💻
 686     Repeated String Match                                       M   ✔️
+693     Binary Number with Alternating Bits                         E   ✔️
 700     Search in a Binary Search Tree                              E   ✔️
 701     Insert into a Binary Search Tree                            M   ✔️
 704     Binary Search                                               E   ✔️  👨‍💻
 739     Daily Temperatures                                          M   ✔️
+762     Prime Number of Set Bits in Binary Representation           E   ✔️  👨‍💻
+844     Backspace String Compare                                    E   ✔️
 852     Peak Index in a Mountain Array                              M   ✔️
 867     Transpose Matrix                                            E   ✔️
 868     Binary Gap                                                  E   ✔️
@@ -126,6 +143,7 @@
 1221    Split a String in Balanced Strings                          E   ✔️
 1287    Element Appearing More Than 25% In Sorted Array             E   ✔️
 1290    Convert Binary Number in a Linked List to Integer           E   ✔️  👨‍💻
+1342    Number of Steps to Reduce a Number to Zero                  E   ✔️  👨‍💻
 1356    Sort Integers by The Number of 1 Bits                       E   ✔️
 1404    Number of Steps to Reduce a Number in Binary Representation M   ✔️
 1415    The k-th Lexicographical String of All Happy Strings        M   ✔️
@@ -142,6 +160,8 @@
 1758    Minimum Changes To Make Alternating Binary String           E   ✔️
 1784    Check if Binary String Has at Most One Segment of Ones      E   ✔️
 1791    Find Center of Star Graph                                   E   ✔️
+1823    Find the Winner of the Circular Game                        M   ✔️
+1855    Maximum Distance Between a Pair of Values                   M   ✔️
 1859    Sorting the Sentence                                        E   ✔️  👨‍💻 
 1878    Get Biggest Three Rhombus Sums in a Grid                    M   
 1886    Determine Whether Matrix Can Be Obtained By Rotation        E   ✔️
@@ -150,10 +170,13 @@
 1980    Find Unique Binary String                                   M   ✔️
 2016    Maximum Difference Between Increasing Elements              E   ✔️
 2042    Check if Numbers Are Ascending in a Sentence                M   ✔️
+2078    Two Furthest Houses With Different Colors                   E   ✔️
 2185    Counting Words With a Given Prefix                          E   ✔️  👨‍💻
+2220    Minimum Bit Flips to Convert Number                         E   ✔️
 2401    Longest Nice Subarray                                       M   
 2540    Minimum Common Value                                        E   ✔️
 2573    Find the String with LCP                                    H   ✔️
+2595    Number of Even and Odd Bits                                 E   ✔️
 2785    Sort Vowels in a String                                     M   ✔️
 2810    Faulty Keyboard                                             E   ✔️
 2839    Check if Strings Can be Made Equal With Operations I        E   ✔️
@@ -175,3 +198,7 @@
 3600    Maximize Spanning Tree Stability with Upgrades              H   ✔️
 3643    Flip Square Submatrix Vertically                            E   ✔️  👨‍💻
 3666    Minimum Operations to Equalize Binary String                H   ✔️
+3740    Minimum Distance Between Three Equal Elements I             E   ✔️
+3740    Minimum Distance Between Three Equal Elements II            M   ✔️
+3761    Minimum Absolute Distance Between Mirror Pairs              M   ✔️ 
+3783    Mirror Distance of an Integer                               E   ✔️  👨‍💻

@@ -1,0 +1,2 @@
+# 3474_Lexicographically_Smallest_Generated_String
+

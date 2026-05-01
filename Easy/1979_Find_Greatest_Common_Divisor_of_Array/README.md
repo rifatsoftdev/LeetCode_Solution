@@ -1,0 +1,2 @@
+# 1979_Find_Greatest_Common_Divisor_of_Array
+

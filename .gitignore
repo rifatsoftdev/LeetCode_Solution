@@ -41,6 +41,7 @@
 *.dwo
 
 # Ignore a specific file
-operation.py
 clean
-# details.md
+details.md
+operation.py
+templates.json
