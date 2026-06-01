@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -50,6 +50,7 @@ public:
 
             int sum = x + y + carry;
             carry = sum / 10;
+
             current->next = new ListNode(sum % 10);
             current = current->next;
 
@@ -57,7 +58,7 @@ public:
             if (l2) l2 = l2->next;
         }
 
-        return dummy->next; // skip dummy node
+        return dummy->next;
     }
 };
 
@@ -65,13 +66,23 @@ public:
 int main() {
     Solution solution;
 
+    // test cases 1
     ListNode* l1 = new ListNode(2, new ListNode(4, new ListNode(3, nullptr)));
     ListNode* l2 = new ListNode(5, new ListNode(6, new ListNode(4, nullptr)));
-
     ListNode* ans = solution.addTwoNumbers(l1, l2);
-
     printSinglyLinkList(ans);
 
+    // test cases 2
+    l1 = new ListNode(0);
+    l2 = new ListNode(0);
+    ans = solution.addTwoNumbers(l1, l2);
+    printSinglyLinkList(ans);
+
+    // test cases 3
+    l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
+    l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
+    ans = solution.addTwoNumbers(l1, l2);
+    printSinglyLinkList(ans);
 
     return 0;
 }

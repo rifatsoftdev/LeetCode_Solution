@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -66,9 +66,20 @@ int main(int argc, char* argv[]) {
 
     Solution solution;
     
+    // test cases 1
     ListNode* head1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
     head1 = solution.removeNthFromEnd(head1, 2);
     printSinglyLinkList(head1);
+
+    // test cases 2
+    ListNode* head2 = new ListNode(1);
+    head2 = solution.removeNthFromEnd(head2, 1);
+    printSinglyLinkList(head2);
+
+    // test cases 3
+    ListNode* head3 = new ListNode(1, new ListNode(2));
+    head3 = solution.removeNthFromEnd(head3, 1);
+    printSinglyLinkList(head3);
 
     return 0;
 }

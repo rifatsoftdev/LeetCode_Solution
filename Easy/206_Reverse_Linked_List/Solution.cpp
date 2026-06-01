@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -50,7 +50,7 @@ public:
             current = nextTemp; // Move to the next node
         }
 
-        return prev; // At the end, prev will be the new head of the reversed list
+        return prev;
     }
 };
 
@@ -60,7 +60,21 @@ int main(int argc, char* argv[]) {
     cin.tie(NULL);
 
     Solution solution;
-    
+
+    // test cases 1
+    ListNode* head1 = createSinglyLinkList({1, 2, 3, 4, 5});
+    ListNode* result1 = solution.reverseList(head1);
+    printSinglyLinkList(result1); // Output: 5 4 3 2 1
+
+    // test cases 2
+    ListNode* head2 = createSinglyLinkList({1, 2});
+    ListNode* result2 = solution.reverseList(head2);
+    printSinglyLinkList(result2); // Output: 2 1
+
+    // test cases 3
+    ListNode* head3 = createSinglyLinkList({});
+    ListNode* result3 = solution.reverseList(head3);
+    printSinglyLinkList(result3); // Output: (empty)
 
     return 0;
 }

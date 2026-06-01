@@ -1,4 +1,4 @@
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -6,19 +6,6 @@ using namespace std;
 // NOTE:
 // For LeetCode submission, copy only the `class Solution` part.
 
-
-/* ================================================================================
-Solution 1:
-
-Rotate List:
-    1. Calculate the length of the linked list and find the last node.
-    2. Connect the last node to the head to make it a circular list.
-    3. The new head will be at position `(length - k % length)`.
-    4. Traverse to the node just before the new head, break the circular connection by setting its next to null, and return the new head.
-
-Time Complexity: O(n), where n is the number of nodes in the list.
-Space Complexity: O(1), as we only use a few pointers.
-*/
 
 /**
  * Definition for singly-linked list.
@@ -75,6 +62,17 @@ int main(int argc, char* argv[]) {
 
     Solution solution;
     
+    // test cases 1
+    ListNode* head1 = createSinglyLinkList({1,2,3,4,5});
+    int k1 = 2;
+    ListNode* result1 = solution.rotateRight(head1, k1);
+    printSinglyLinkList(result1); // Expected output: 4 -> 5 -> 1 -> 2 -> 3
+
+    // test cases 1
+    ListNode* head2 = createSinglyLinkList({0,1,2});
+    int k2 = 4;
+    ListNode* result2 = solution.rotateRight(head2, k2);
+    printSinglyLinkList(result2); // Expected output: 2 -> 0 -> 1
 
     return 0;
 }

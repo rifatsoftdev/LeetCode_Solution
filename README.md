@@ -11,20 +11,39 @@ This repository contains my C++ solutions to LeetCode problems for DSA practice 
 ## 📂 Repository Structure
 ```text
 LeetCode_Solution/
-├── devlibs/
-│   └── cpphelper.h
+│   devlibs/
+│   └── cpp
+│   │   └── cpphelper.h
+│   └── java
+│   │   └── javahelper.java
+│   └── python
+│       └── devlibs/ <python modules>
+│
 ├── Easy/
-│   └── <problem_file>.cpp
+│   └── <problem_folder>
+│       └── Solution.cpp
+│       └── Solution.java
+│       └── Solution.py
+│
 ├── Medium/
-│   └── <problem_file>.cpp
+│   └── <problem_folder>
+│       └── Solution.cpp
+│       └── Solution.java
+│       └── Solution.py
 ├── Hard/
-│   └── <problem_file>.cpp
+│   └── <problem_folder>
+│       └── Solution.cpp
+│       └── Solution.java
+│       └── Solution.py
+├── clean
+├── newfile
 ├── .gitignore
-└── README.md
+├── README.md
+└── templates.json
 ```
 
 - Problems are organized by difficulty: `Easy`, `Medium`, `Hard`.
-- File naming format usually follows: `<problem_number>_<problem_name>.cpp`.
+- Folder naming format usually follows: `<problem_number>_<problem_name>`.
 
 ## 💻 Usage
 1. Clone the repository:
@@ -35,9 +54,21 @@ cd LeetCode_Solution
 
 2. Open any solution file and compile with a C++ compiler:
 ```bash
-g++ Medium/16_3Sum_Closest.cpp -o run
-./run
+g++ Medium/2_Add_Two_Numbers/Solution.cpp -o solution
+./solution
 ```
+
+3. For Java, compile and run:
+```bash
+javac Medium/2_Add_Two_Numbers/Solution.java
+java Medium.2_Add_Two_Numbers.Solution
+```
+
+4. For Python, simply run:
+```bash
+python Medium/2_Add_Two_Numbers/Solution.py
+```
+
 
 ## 📝 Notes
 - Helper utilities (if needed) are placed in `devlibs/`.

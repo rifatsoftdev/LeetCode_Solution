@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include "../../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -22,17 +19,6 @@ using namespace std;
 // NOTE:
 // For LeetCode submission, copy only the `class Solution` part.
 
-
-/* ================================================================================
-Solution 1:
-
-Search in a Binary Search Tree:
-    1. If the value is found, return the subtree rooted with that node.
-    2. If the value is not found, return NULL.
-
-Time Complexity: O(h), where h is the height of the BST. In the worst case, the tree is a line and the complexity is O(n).
-Space Complexity: O(1) for the iterative approach, as we only use a pointer to traverse the tree.
-*/
 
 class Solution {
 public:

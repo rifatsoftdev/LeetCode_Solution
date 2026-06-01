@@ -1,0 +1,86 @@
+#!/usr/bin/env python
+
+import os
+import re
+import json
+
+
+PATH = ["Easy","Medium", "Medium"]
+FILE_LIST = ["README.md", "Solution.cpp", "Solution.py", "Solution.java"]
+
+def program_file():
+    allFile = []
+    number = []
+
+    for p in PATH:
+        allFile.extend(os.listdir(p))
+
+    for file in allFile:
+        try:
+            number.append(int(file.split("_")[0]))
+        except:
+            continue
+
+    number.sort()
+
+    return number
+
+
+def details_file():
+    file = "details.md"
+    number = []
+
+    with open(file, "r", encoding="utf-8") as file:
+        for line in file:
+            number.append(int(line[0:4]))
+            # clean_line = " ".join(line.split())
+            # print(clean_line)
+    
+    return number
+
+
+def create_new():
+    problem_name = input("Problem Number and Name: ")
+    difficulty = input("Difficulty (E/M/H): ").upper()
+
+    if difficulty == "E":
+        path = "Easy"
+    elif difficulty == "M":
+        path = "Medium"
+    elif difficulty == "H":
+        path = "Hard"
+    else:
+        print("Invalid difficulty")
+        return
+    
+    # normalize
+    s = re.sub(r'[^a-zA-Z0-9]+', '_', problem_name)
+    folder_name = s.strip('_')
+
+    folder_path = os.path.join(path, folder_name)
+    os.makedirs(folder_path, exist_ok=False)
+
+    # load templates
+    with open("templates.json", "r") as f:
+        templates = json.load(f)
+
+    # create files
+    for file, content in templates.items():
+        file_path = os.path.join(folder_path, file)
+
+        with open(file_path, "w") as f:
+            if isinstance(content, list):
+                f.write("\n".join(content))  # list → string
+            else:
+                f.write(content)
+
+    print(f"✅ Created: {folder_path}")
+
+
+if __name__ == "__main__":
+    # details = details_file()
+    # program = program_file()
+
+    # # print(set(program).difference(set(details)))
+    # print(36 in program)
+    create_new()

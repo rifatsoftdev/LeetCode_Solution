@@ -1,4 +1,4 @@
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -7,18 +7,7 @@ using namespace std;
 // For LeetCode submission, copy only the `class Solution` part.
 
 
-/* ================================================================================
-Solution 1:
 
-Plus One:
-    1. Iterate through the digits from right to left.
-    2. If the current digit is less than 9, increment it by 1 and return the array.
-    3. If the digit is 9, set it to 0 and continue to the next digit on the left.
-    4. If all digits are 9, the loop will finish, and we need to insert a 1 at the beginning of the array.
-
-Time Complexity: O(n)
-Space Complexity: O(1) (or O(n) if a new digit is inserted at the front)
-*/
 
 class Solution {
 public:

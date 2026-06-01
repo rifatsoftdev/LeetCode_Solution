@@ -203,6 +203,21 @@ string decimalToBinary(int n) {
 }
 
 
+// create singly-linked list
+ListNode* createSinglyLinkList(const vector<int>& values) {
+    if (values.empty()) return nullptr;
+
+    ListNode* head = new ListNode(values[0]);
+    ListNode* current = head;
+
+    for (size_t i = 1; i < values.size(); ++i) {
+        current->next = new ListNode(values[i]);
+        current = current->next;
+    }
+
+    return head;
+}
+
 // print singly-linked list
 void printSinglyLinkList(ListNode* head) {
     if (head == nullptr) {

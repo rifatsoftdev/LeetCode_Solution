@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+
+import os
+
+
+DIR_LIST = ["Easy", "Medium", "Hard"]
+EXTENSIONS = [".class"]   # Java build file
+FILES = ["a.out"]         # specific file
+
+def is_executable(file_path):
+    return os.access(file_path, os.X_OK)
+
+def find_files():
+    targets = []
+
+    for base_dir in DIR_LIST:
+        if not os.path.exists(base_dir):
+            continue
+
+        for root, dirs, files in os.walk(base_dir):
+            for file in files:
+                full_path = os.path.join(root, file)
+
+                # condition
+                if (
+                    any(file.endswith(ext) for ext in EXTENSIONS)
+                    or file in FILES
+                    or is_executable(full_path)
+                ):
+                    targets.append(full_path)
+
+    return targets
+
+
+def delete_files(files):
+    for file in files:
+        try:
+            os.remove(file)
+            print(f"🗑️  Deleted: {file}")
+        except Exception as e:
+            print(f"❌ Error: {file} -> {e}")
+
+
+if __name__ == "__main__":
+    files = find_files()
+
+    if not files:
+        print("✅ No junk files found!")
+        exit()
+
+    print("⚠️ Files to be deleted:\n")
+    for f in files:
+        print(f)
+
+    confirm = input("\nDelete this file? (y/n): ")
+
+    if confirm.lower() == 'y':
+        delete_files(files)
+        print("\n🎉 Cleanup done!")
+    else:
+        print("❌ Operation cancelled.")
