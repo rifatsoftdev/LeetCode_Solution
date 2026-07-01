@@ -1,4 +1,4 @@
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -6,21 +6,6 @@ using namespace std;
 // NOTE:
 // For LeetCode submission, copy only the `class Solution` part.
 
-
-/* ================================================================================
-Solution 1:
-
-Number of Steps to Reduce a Number to Zero:
-    1. Initialize a `steps` counter to 0.
-    2. While the number `num` is greater than 0:
-        a. If `num` is even, divide it by 2.
-        b. If `num` is odd, subtract 1 from it.
-        c. Increment the `steps` counter after each operation.
-    3. Return the total number of steps taken to reach zero.
-
-Time Complexity: O(log n), as dividing by 2 reduces the number of bits in each step.
-Space Complexity: O(1), as we only use a single integer variable for counting.
-*/
 
 class Solution {
 public:
@@ -47,8 +32,13 @@ int main(int argc, char* argv[]) {
 
     Solution solution;
 
+    // test cases 1
     cout << solution.numberOfSteps(14) << endl; // Output: 6
+
+    // test cases 2
     cout << solution.numberOfSteps(8) << endl;  // Output: 4
+
+    // test cases 3
     cout << solution.numberOfSteps(123) << endl; // Output: 12
 
     return 0;

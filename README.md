@@ -1,4 +1,13 @@
-# LeetCode Solution
+
+# 🧠 LeetCode Solutions
+
+![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-orange?style=for-the-badge&logo=leetcode)
+![Language](https://img.shields.io/badge/Language-C%2B%2B%20%7C%20Java%20%7C%20Python-blue?style=for-the-badge)
+![Problems](https://img.shields.io/badge/Problems%20Solved-400%2B-brightgreen?style=for-the-badge)
+
+> 📌 My personal collection of LeetCode problem solutions focused on **Data Structures & Algorithms**.  
+> Organized by difficulty — **Easy**, **Medium**, **Hard** — with solutions in C++, Java, and Python.
+
 
 Welcome to **LeetCode Solution**.  
 This repository contains my C++ solutions to LeetCode problems for DSA practice and interview preparation.

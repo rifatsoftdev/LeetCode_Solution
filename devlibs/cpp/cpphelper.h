@@ -17,6 +17,7 @@
 #include <array>
 #include <climits>
 #include <deque>
+#include <sstream>
 
 #include "linkedlist.h"
 #include "binarytree.h"

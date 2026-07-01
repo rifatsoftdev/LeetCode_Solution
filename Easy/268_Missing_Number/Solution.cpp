@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -75,12 +72,15 @@ int main(int argc, char* argv[]) {
 
     Solution solution;
     
+    // test cases 1
     vector<int> nums1 = {3,0,1};
     cout << solution.missingNumber(nums1) << endl;
 
+    // test cases 2
     vector<int> nums2 = {0,1};
     cout << solution.missingNumber(nums2) << endl;
 
+    // test cases 3
     vector<int> nums3 = {9,6,4,2,3,5,7,0,1};
     cout << solution.missingNumber(nums3) << endl;
 
