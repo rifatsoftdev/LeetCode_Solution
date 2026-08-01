@@ -9,6 +9,7 @@ class ListNode:
         self.next = next
         self.prev = prev
 
+
 # List To Doubly LinkedList
 def listToDoublyLinkedList(nums: list[int]) -> Optional[ListNode]:
     if not nums:
@@ -21,6 +22,7 @@ def listToDoublyLinkedList(nums: list[int]) -> Optional[ListNode]:
         new_node.prev = curr
         curr = curr.next
     return head
+
 
 # Print Doubly LinkList
 def printDoublyLinkList(head: Optional[ListNode]) -> None:

@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -20,19 +17,6 @@ using namespace std;
 
 // NOTE:
 // For LeetCode submission, copy only the `class Solution` part.
-
-
-/* ================================================================================
-Solution 1:
-
-Brute Force Approach:
-    1. Traverse the linked list and for each node, check if its value is equal to the target value.
-    2. If it is, remove the node from the linked list by updating the next pointer of the previous node to skip the current node.
-    3. Continue this process until the end of the linked list is reached.
-
-Time Complexity: O(n), where n is the number of nodes in the linked list.
-Space Complexity: O(1), as we are modifying the linked list in place without using any additional data structures.
-*/
 
 class Solution {
 public:
@@ -66,14 +50,17 @@ int main(int argc, char* argv[]) {
 
     Solution solution;
     
+    // test cases 1
     ListNode* head1 = new ListNode(1, new ListNode(2, new ListNode(6, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6)))))));
     ListNode* result1 = solution.removeElements(head1, 6);
     printSinglyLinkList(result1);
 
+    // test cases 2
     ListNode* head2 = new ListNode();
     ListNode* result2 = solution.removeElements(head2, 1);
     printSinglyLinkList(result2);
 
+    // test cases 3
     ListNode* head3 = new ListNode(7, new ListNode(7, new ListNode(7, new ListNode(7))));
     ListNode* result3 = solution.removeElements(head3, 7);
     printSinglyLinkList(result3);

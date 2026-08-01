@@ -1,26 +1,10 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
 
 // NOTE:
 // For LeetCode submission, copy only the `class Solution` part.
-
-
-/* ================================================================================
-Solution 1:
-
-Check Balanced String:
-    1. You are given a string num, which represents a positive integer.
-    2. You have to determine if the given string is a balanced string or not.
-    3. A string is said to be balanced if the sum of digits at even indices is equal to the sum of digits at odd indices.
-
-Time Complexity: O(n), where n is the length of the input string num.
-Space Complexity: O(1), as we are using only a constant amount of extra space to store the sums of digits at even and odd indices.
-*/
 
 class Solution {
 public:
@@ -36,6 +20,7 @@ public:
                 oddSum += digit;
             }
         }
+        
         return evenSum == oddSum;
     }
 };
@@ -47,7 +32,10 @@ int main(int argc, char* argv[]) {
 
     Solution solution;
     
+    // test cases 1
     cout << solution.isBalanced("1234") << endl; // Output: false
+
+    // test cases 2
     cout << solution.isBalanced("24123") << endl;  // Output: true
 
     return 0;

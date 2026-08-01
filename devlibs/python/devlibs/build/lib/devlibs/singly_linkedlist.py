@@ -1,6 +1,7 @@
 from typing import Optional
 
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -19,6 +20,7 @@ def listToSinglyLinkedList(nums: list[int]) -> Optional[ListNode]:
         curr = curr.next
     return head
     
+
 # Print Singly LinkList
 def printSinglyLinkList(head: Optional[ListNode]) -> None:
     curr = head
@@ -27,3 +29,5 @@ def printSinglyLinkList(head: Optional[ListNode]) -> None:
         result.append(str(curr.val))
         curr = curr.next
     print(" -> ".join(result) if result else "None")
+
+

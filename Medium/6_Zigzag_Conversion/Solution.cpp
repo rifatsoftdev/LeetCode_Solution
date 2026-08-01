@@ -1,4 +1,4 @@
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -7,24 +7,18 @@ using namespace std;
 // For LeetCode submission, copy only the `class Solution` part.
 
 
-/* ================================================================================
-Solution 1:
-
-PAYPALISHIRING
-P I N
-A L S  I G
-Y A H R
-P I
-*/
-
 class Solution {
 public:
     string convert(string s, int numRows) {
-        vector<string> s(numRows);
+        vector<string> stArr[numRows];
 
         for (int i = 0; i < s.size(); i++) {
             
         }
+
+        string result;
+        
+        return result;
     }
 };
 
@@ -34,7 +28,21 @@ int main(int argc, char* argv[]) {
     cin.tie(NULL);
 
     Solution solution;
-    
+
+    // test cases 1
+    string s1 = "PAYPALISHIRING";
+    int numRows1 = 3;
+    cout << solution.convert(s1, numRows1) << endl;
+
+    // test cases 2
+    string s2 = "PAYPALISHIRING";
+    int numRows2 = 4;
+    cout << solution.convert(s2, numRows2) << endl;
+
+    // test cases 3
+    string s3 = "A";
+    int numRows3 = 1;
+    cout << solution.convert(s3, numRows3) << endl;
 
     return 0;
 }
