@@ -7,20 +7,43 @@ using namespace std;
 // For LeetCode submission, copy only the `class Solution` part.
 
 
+
+
 class Solution {
 public:
     string convert(string s, int numRows) {
-        vector<string> stArr[numRows];
+        if (numRows <= 1) {
+            return s;
+        }
 
-        for (int i = 0; i < s.size(); i++) {
-            
+        vector<string> rows(numRows);
+
+        int row = 0;
+        int direction = 1;
+
+        for (char c : s) {
+            rows[row] += c;
+
+            if (row == 0) {
+                direction = 1;
+            }
+            else if (row == numRows - 1) {
+                direction = -1;
+            }
+
+            row += direction;
         }
 
         string result;
-        
+
+        for (string &r : rows) {
+            result += r;
+        }
+
         return result;
     }
 };
+
 
 
 int main(int argc, char* argv[]) {

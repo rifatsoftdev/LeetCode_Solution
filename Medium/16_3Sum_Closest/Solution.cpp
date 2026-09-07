@@ -38,7 +38,6 @@ public:
             int k = n - 1;
 
             while (j < k) {
-
                 long long sum = (long long)nums[i] + nums[j] + nums[k];
 
                 if (llabs(sum - target) < llabs(ans - target))

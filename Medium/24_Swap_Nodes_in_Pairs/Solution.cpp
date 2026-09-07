@@ -39,18 +39,22 @@ int main(int argc, char* argv[]) {
 
     Solution solution;
 
+    // test cases 1
     ListNode* head1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
     ListNode* result1 = solution.swapPairs(head1);
     printSinglyLinkList(result1); // Expected output: 2 -> 1 -> 4
 
+    // test cases 2
     ListNode* head2 = new ListNode();
     ListNode* result2 = solution.swapPairs(head2);
     printSinglyLinkList(result2); // Expected output: (empty)
 
+    // test cases 3
     ListNode* head3 = new ListNode(1);
     ListNode* result3 = solution.swapPairs(head3);
     printSinglyLinkList(result3); // Expected output: 1
 
+    // test cases 4
     ListNode* head4 = new ListNode(1, new ListNode(2, new ListNode(3)));
     ListNode* result4 = solution.swapPairs(head4);
     printSinglyLinkList(result4); // Expected output: 2 -> 1 -> 3
