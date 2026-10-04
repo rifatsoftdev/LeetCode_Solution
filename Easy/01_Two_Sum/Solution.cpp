@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <unordered_map>
-#include "../../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 

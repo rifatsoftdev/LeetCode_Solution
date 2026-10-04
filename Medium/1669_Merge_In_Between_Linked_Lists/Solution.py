@@ -14,11 +14,13 @@ class Solution:
             i += 1
 
         temp = curr
+        
         while i <= b and temp != None:
             temp = temp.next
             i += 1
 
         tail = list2
+
         while tail.next != None:
             tail = tail.next
 

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -9,20 +9,6 @@ using namespace std;
 // NOTE:
 // For LeetCode submission, copy only the `class Solution` part.
 
-
-/* ================================================================================
-Solution 1:
-
-House Robber (Memoization (Top-Down)):
-    1. Use a memoization table to store the results of subproblems and avoid redundant calculations.
-    2. For each house, the robber has two choices: rob the current house and move to the house two steps back, or skip the current house and move to the previous house.
-    3. The recursive relation is: `rob(i) = max(nums[i] + rob(i - 2), rob(i - 1))`.
-    4. Base cases: if the index is less than 0, return 0.
-
-Time Complexity: O(n)
-Space Complexity: O(n)
-
-*/
 
 // class Solution {
 // private:
@@ -87,10 +73,12 @@ int main(int argc, char* argv[]) {
     cin.tie(NULL);
 
     Solution solution;
-    
+
+    // test cases 1
     vector<int> nums1 = {1,2,3,1};
     cout << solution.rob(nums1) << endl;
 
+    // test cases 2
     vector<int> nums2 = {2,7,9,3,1};
     cout << solution.rob(nums2) << endl;
 

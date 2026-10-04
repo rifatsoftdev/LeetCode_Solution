@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include "../devlibs/cpphelper.h"
+#include "../../devlibs/cpp/cpphelper.h"
 
 using namespace std;
 
@@ -35,8 +32,13 @@ int main(int argc, char* argv[]) {
 
     Solution solution;
     
+    // test cases 1
     cout << solution.isPalindrome(121) << endl;
+
+    // test cases 2
     cout << solution.isPalindrome(-121) << endl;
+
+    // test cases 3
     cout << solution.isPalindrome(10) << endl;
 
     return 0;
